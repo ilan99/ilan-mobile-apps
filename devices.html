@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Select Picture</title>
+<title>Devices</title>
 
 <style>
     body {
@@ -11,22 +11,38 @@
         margin: 0;
         padding: 20px;
     }
-
-    h1, h2 {
-        margin: 20px 0;
+	
+	.title {
+        font-size: 24px;
+        font-weight: 600;
     }
+
+    .subtitle {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+	
+	h3 {
+        color: red;
+	}
+	
+	h4 {
+        margin-bottom: 5px;;
+	}
 
     .link {
-        margin: 10px 0;
         font-size: 18px;
         color: blue;
-        cursor: pointer;
-        text-decoration: underline;
-    }
+	}
 
     .divider {
-        border-top: 2px solid black;
-        margin: 40px 0;
+        border-top: 1px solid black;
+        margin: 20px 0;
+    }
+	
+	.space {
+        height: 5px;
     }
 
     img {
@@ -34,7 +50,6 @@
         height: auto;
     }
 
-    /* Makes the section appear slightly below top (optional padding offset) */
     section {
         scroll-margin-top: 20px;
     }
@@ -43,15 +58,26 @@
 
 <body>
 
-<h1>Select Picture</h1>
+<h1 class="title">Select Your Device Manufacturer</h1>
+<p class="subtitle">
+    If your device is not listed, please choose <strong>“Generic Device.”</strong>
+</p>
 
+
+<!----------->
+<!-- Links -->
+<!----------->
 <a href="#generic" class="link">Generic device</a></br>
+<div class="space"></div>
 <a href="#pic2" class="link">Pic 2</a>
 
+<!------------->
+<!-- Devices -->
+<!------------->
 <div class="divider"></div>
 <section id="generic">
-	<h2>Generic device</h2>
-	<span>1.</span></br>
+	<h3>Generic device</h3>
+	<h4>1.</h4>
     <img src="./images/generic/gen_1_0.png" alt="Picture 1">
 </section>
 
